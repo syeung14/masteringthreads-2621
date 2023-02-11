@@ -18,6 +18,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="jcip-annotations">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jcip-annotations-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcip-annotations">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jcip-annotations-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="JUnit4">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/junit-4.13.1.jar!/" />
