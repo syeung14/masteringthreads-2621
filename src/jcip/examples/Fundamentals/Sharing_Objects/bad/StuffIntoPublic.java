@@ -1,6 +1,6 @@
 package jcip.examples.Fundamentals.Sharing_Objects.bad;
 
-import net.jcip.examples.Fundamentals.Sharing_Objects.Holder;
+import jcip.examples.Fundamentals.Sharing_Objects.Holder;
 
 /**
  * StuffIntoPublic

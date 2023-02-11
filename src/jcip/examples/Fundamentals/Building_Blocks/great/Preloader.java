@@ -2,7 +2,7 @@ package jcip.examples.Fundamentals.Building_Blocks.great;
 
 import java.util.concurrent.*;
 
-import net.jcip.examples.LaunderThrowable;
+import jcip.examples.LaunderThrowable;
 
 /**
  * Preloader

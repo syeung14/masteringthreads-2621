@@ -2,7 +2,7 @@ package jcip.examples.Structuring_Concurrent_Applications.Cancellation_and_Shutd
 
 import java.util.concurrent.*;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static jcip.examples.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun2

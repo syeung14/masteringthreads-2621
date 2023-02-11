@@ -1,6 +1,6 @@
 package jcip.examples.Structuring_Concurrent_Applications.Task_Execution.great;
 
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static jcip.examples.LaunderThrowable.launderThrowable;
 
 import java.util.*;
 import java.util.concurrent.*;

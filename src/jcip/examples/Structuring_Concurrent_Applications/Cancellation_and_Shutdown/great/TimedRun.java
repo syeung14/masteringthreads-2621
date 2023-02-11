@@ -1,6 +1,6 @@
 package jcip.examples.Structuring_Concurrent_Applications.Cancellation_and_Shutdown.great;
 
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static jcip.examples.LaunderThrowable.launderThrowable;
 
 import java.util.concurrent.*;
 

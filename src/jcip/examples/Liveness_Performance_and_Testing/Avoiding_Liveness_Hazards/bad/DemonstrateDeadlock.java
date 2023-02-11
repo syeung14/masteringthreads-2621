@@ -2,8 +2,8 @@ package jcip.examples.Liveness_Performance_and_Testing.Avoiding_Liveness_Hazards
 
 import java.util.*;
 
-import net.jcip.examples.Liveness_Performance_and_Testing.Avoiding_Liveness_Hazards.bad.DynamicOrderDeadlock.Account;
-import net.jcip.examples.Liveness_Performance_and_Testing.Avoiding_Liveness_Hazards.bad.DynamicOrderDeadlock.DollarAmount;
+import jcip.examples.Liveness_Performance_and_Testing.Avoiding_Liveness_Hazards.bad.DynamicOrderDeadlock.Account;
+import jcip.examples.Liveness_Performance_and_Testing.Avoiding_Liveness_Hazards.bad.DynamicOrderDeadlock.DollarAmount;
 
 
 /**
