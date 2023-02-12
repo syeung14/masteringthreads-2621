@@ -24,10 +24,20 @@ public class TriggeringTask {
             return ids.stream().map(User::new).collect(Collectors.toList());
         };
 
+        Function<List<Long>, CompletableFuture<List<User>>> fetchUsersFu = ids -> {
+            sleep(300);
+            Supplier<List<User>> userSupplier =
+                () -> {
+//                    System.out.println("Currentlyo in " + Thread.currentThread().getName());
+                    return ids.stream().map(User::new).collect(Collectors.toList());
+                };
+            return CompletableFuture.supplyAsync(userSupplier);
+        };
+
         Consumer<List<User>> displayer = users -> users.forEach(System.out::println);
 
         CompletableFuture<List<Long>> cf = CompletableFuture.supplyAsync(supplyIds);
-        cf.thenApply(fetchUsers)
+        cf.thenCompose(fetchUsersFu)
             .thenAccept(displayer);
 
         sleep(1000);
