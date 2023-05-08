@@ -27,6 +27,7 @@ public abstract class FutureRenderer {
                     }
                 };
 
+        // start to download the image before rendering Text
         Future<List<ImageData>> future = executor.submit(task);
         renderText(source);
 

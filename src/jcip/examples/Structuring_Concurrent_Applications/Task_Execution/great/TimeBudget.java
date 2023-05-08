@@ -74,3 +74,10 @@ interface TravelQuote {
 interface TravelInfo {
 }
 
+class Test implements Callable<Void>  {
+
+    @Override
+    public Void call() throws Exception {
+        throw new UnsupportedOperationException(); // TODO
+    }
+}
