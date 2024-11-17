@@ -14,7 +14,13 @@ public class Calculate {
 
     public Future<String> calculateAsync() throws InterruptedException {
         CompletableFuture<String> completableFuture;// = CompletableFuture.completedFuture("hello!");
-        completableFuture = new CompletableFuture<>();
+        completableFuture = new CompletableFuture<>() {
+
+            @Override
+            public boolean cancel(boolean mayInterruptIfRunning) {
+                throw new UnsupportedOperationException(); // TODO
+            }
+        };
 
         Executors.newCachedThreadPool().submit(() -> {
             Thread.sleep(500);
